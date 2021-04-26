@@ -1,0 +1,55 @@
+/* Carrousel */
+
+@keyframes AutoSlide {
+	0% {
+		left: 0px; /*1ère image*/
+	}
+	15% {
+		left: 0px; /*idem pour attente*/
+	}
+	35% {
+		left: -100%; /*2ème image*/
+	}
+	50% {
+		left: -100%; /*idem pour attente*/
+	}
+	70% {
+		left: -200%; /*3ème image*/
+	}
+	85% {
+		left: -200%; /*idem pour attente*/
+	}
+	100% {
+		left: -0px; /*1ère image*/
+	}
+}
+img{
+	opacity: 100%;
+}
+
+#slideshow {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin:  0px;
+	overflow: hidden;
+
+}
+
+#sContent li {
+	display: inline;
+}
+
+#sContent {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 299%;
+	margin: 0;            
+	padding: 0;
+	z-index: 1;
+	animation-name: AutoSlide;
+	animation-duration: 16s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}

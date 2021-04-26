@@ -1,0 +1,9 @@
+#progress{
+	background-color: #000000;
+	height: 5px;
+	width: 10%;
+	position: sticky;
+	top: 100%;
+	left: 0px;
+	z-index: 9999; /* Peut être important si vous avez un menu en position fixe */
+}

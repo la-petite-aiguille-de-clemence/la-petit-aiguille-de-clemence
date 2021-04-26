@@ -1,0 +1,203 @@
+:root {
+	/* couleur */
+	--bg-color: rgb(24,24,24); /* noir, gris*/
+	--bg-sec-color: rgb(33,33,33); /* noir, noir*/
+	--bg-third-color: #055772; /* bleu claire*/
+	--font-color: rgb(144,144,144); /* JSP*/
+	--font-sec-color: rgb(255,255,255); /* blanc */
+
+}	
+/* Propri?t? de tout le document */
+
+* {
+	font-size: 18px;
+    font-family: Arial, fantasy;
+    scroll-behavior: smooth;
+}
+
+/* Changement de couleur */
+
+body {
+	background-color: #001f3d;;
+   	margin: 0px;
+   	padding: 0px;
+}
+
+
+section { /* marge */
+	background-color: var(--font-sec-color); /* couleur ilot centrale */
+	display: flex; /* marge vid?o hauteur*/
+	flex-direction: column; /* place vid?o */
+	margin: 2% 5%; /* marge en pourcentage */
+	border-radius: 30px; /* angle */
+}
+
+/* police */
+
+/* police h1,h2 { /* soulign? cas ou 
+	text-decoration: underline; */
+
+h1 {
+	color: white;
+	font-size: 30px;
+	font-family: Arial;
+}
+
+h2 {
+	text-align: center;
+	color: white;
+	font-size: 17px;
+	font-family: Arial, fantasy;
+	scroll-behavior: smooth;
+}
+
+h3 {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	font-family: Arial;
+}
+
+h4 {
+	text-align: center;
+}
+image-fils {
+	display: flex;
+	justify-content:center;
+	justify-content: space-around; /* position mots et image distance */
+}
+
+photo-clemence {
+	height: 100%;
+	align-self: center;
+	margin: 20px;
+	border-radius: 25px;
+	max-height: 200px;
+}
+
+
+
+
+	/* Balise p */
+
+	p {
+	margin-left: 100px;
+	margin-right: 100px;
+	margin: 5px;
+
+}
+
+/* t?te*/
+header {
+	justify-content: space-around;
+	display: flex; /* postition mots et image */
+	margin: 0px;
+	position: static; /* position */
+	max-height: 130px; /* largeur */
+	background-color: #40A497; /* couleur */
+	/* t?te */
+}
+
+
+
+/* Barre de navigation */
+
+nav{
+	width: 100%; /* longuer de la Barre de navigation */
+	float: left; 
+	background-color: #055772; /* couleur de la Barre de navigation */
+	/*padding: 5px 100px; */
+	position: sticky;/* position relative de la Barre de navigation */
+    top: -1px; /* longueur entre le haut de la page et la Barre de navigation */
+    z-index: 2;
+}
+
+nav ul{
+	list-style-type: none;
+	display: flex; /* postition mots et image */
+	justify-content: space-between; /* position mots et image distance */
+}
+
+nav ul li{
+	float: left;
+    margin-left: 5%; /* distance entre les mots */
+    margin-right: 10%; /* distance entre les mots et la droite */
+    margin-bottom: 1%; /*  disante entre les mots et le bas*/
+}
+
+nav a{
+
+	font-size: 100%; /* taille des mots */
+	color: white;
+	font-family: Arial;
+	display: flex;
+}
+
+nav a:hover{
+	color: #09a9c8;
+}
+
+footer { /* bas */
+	text-align: center;
+	background-color: #333;
+	width: 100%;
+	margin-top: 20px; /* Ddistance avec le texte du haut */
+	border-top: solid var(--font-color) 4px; /* largeur de la barre */
+	color: white; /* couleur de l'?criture */
+	line-height: 25px; /* retour chariot */
+	position: absolute;
+}
+
+
+/* Mise en position de la fleche vers le haut */
+
+
+#up {
+	border-radius: 4px 4px 0 0;
+	line-height: 35px;
+	height: 35px;
+	bottom: 0;
+}
+
+#up::before {
+	content: '∧';
+}
+#up {
+	background-color: #333;
+	text-align: center;
+	font-size: 25px;
+	transition: 0.75s;
+	position: fixed;
+	color: var(--font-sec-color);
+	right: 40px;
+	width: 50px;
+	margin: 0;
+	z-index: 3;
+
+}
+
+#up:hover {
+	background-color: var(--bg-third-color);
+}
+/*image de cl?mence ? droite*/
+.picture-left {
+	float: right;
+	margin: auto;
+	width: auto;
+	height: auto;
+	align-self: center;
+	max-height: 300px;	
+}
+
+.paragraph-right {
+  margin : 0% 30% 80% 0%
+}
+
+.div-categoryContainer{   
+  margin-left : 1em;
+  margin-right : 1em;
+  
+	padding: 20px;
+  max-height : 18em;
+  
+}
